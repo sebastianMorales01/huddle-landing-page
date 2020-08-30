@@ -1,0 +1,126 @@
+:root{
+    --Violet: hsl(257, 40%, 49%);
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-image: url(../img/bg-mobile.svg);
+    background-color: var(--Violet); 
+    background-repeat: no-repeat;
+    background-size: 100%;  
+}
+.header img{
+    font-family: 'Poppins', sans-serif;
+    margin: 30px;
+    margin-left: 40px;
+    margin-top: 10px;
+    height: 30%;       
+    width: 30%;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+}
+.card img{
+    height: 80%;       
+    width: 80%;        
+    object-fit: cover;  
+}
+.description{
+    text-align: center;
+    color: white;
+    margin: 40px;
+}
+.description h1{
+    font-size: 20px;
+    margin-top: -5px;
+}
+.description p{
+    font-size: 16px;
+}
+.description button{
+    padding-right: 60px;
+    padding-left: 60px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 20px;
+    color:var(--Violet);
+    background: white;
+    border:0px;  
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+}
+.icon i{
+    color: white;
+    border:1px solid white;
+    margin-right: 12px;
+    width: 16px;
+    border-radius: 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+/* version desktop */
+@media screen and (min-width:768px){
+    body{
+        font-family: 'Open Sans', sans-serif;
+        background-image: url(../img/bg-desktop.svg);
+        background-color: var(--Violet); 
+        background-repeat: no-repeat;
+    }
+    .header img{
+        font-family: 'Poppins', sans-serif;
+        margin-left: 40px;
+        margin-top: 10px;
+        height: 15%;       
+        width: 15%;
+        margin-bottom: -10px;
+    }
+    .card{
+        display: flex;
+        flex-direction: row;
+        margin-left: 40px;
+    }
+    .card img{
+        height: 50%;       
+        width: 50%;        
+        object-fit: cover;  
+    }
+    .card2{
+        height: 600px
+    }
+    .description{
+        text-align: left;
+        color: white;
+        margin: 35px;
+        margin-right: 100px;
+        margin-top: 100px;
+        margin-bottom: 230px;
+    }
+    .description h1{
+        font-size: 30px;
+        margin-top: -5px;
+    }
+    .description button{
+        padding-right: 45px;
+        padding-left: 45px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        border-radius: 20px;
+        color:var(--Violet);
+        background: white;
+        border:0px;  
+        box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
+    }
+    .icon{
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 100px;
+    }
+
+}
